@@ -499,22 +499,24 @@
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </div>
             </aside>
-            <form action="" class="form-contact" autocomplete="off">
+            <form class="form-contact" action="https://formsubmit.co/matias.plin@gmail.com" method="POST"
+                autocomplete="off">
                 <h2>Contáctame</h2>
                 <div class="input">
-                    <input type="text" required
+                    <input type="text" name="nombres" required
                         pattern="^[a-zA-ZáéíóúàèìòùÁÉÍÓÚÀÈÌÒÙñÑ]+ [a-zA-ZáéíóúàèìòùÁÉÍÓÚÀÈÌÒÙñÑ]+$"
-                        title="Solo se aceptan letras.">
+                        title="Solo se aceptan letras." id="input-name">
                     <p>Nombres</p>
                 </div>
                 <div class="input">
-                    <input type="email" required
+                    <input type="email" name="correo" required
                         pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-                        title="El email es inválido.">
+                        title="El email es inválido." id="input-email">
                     <p>Email</p>
                 </div>
                 <div class="input">
-                    <textarea required title="Escribe tu mensaje, por favor."></textarea>
+                    <textarea required name="comentarios" title="Escribe tu mensaje, por favor."
+                        id="textarea-coments"></textarea>
                     <p>Déjame tus comentarios...</p>
                 </div>
                 <input type="submit" value="CONTACTAR">
